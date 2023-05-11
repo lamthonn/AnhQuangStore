@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Spectral', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+i{
+    font-size: 20px;
+}
+
+#tieu_de{
+    position: relative;
+}
+
+.tieu_de_quang_cao {
+    text-align: center;
+    height: 19px;
+    padding: 8px;
+}
+
+/* Begin: css cho tiêu đề trên */
+.tieu_de_tren{
+    background-color: rgb(25 61 135);
+    padding: 7px 35px;
+    display: flex;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tieu_de_tren .thoi_gian,
+.thoi_gian .hotline {
+    display: flex;
+}
+
+.tieu_de_tren .thoi_gian .hotline a{
+    font-weight: 600;
+}
+
+.thoi_gian .hotline p{
+    padding: 0 15px;
+}
+
+.mu{
+    font-size: 9px;
+    background-color: red;
+    padding: 3px 6px;
+    border-radius: 11px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+/* End: css cho tiêu đề trên */
+
+/* Begin: css cho tiêu đề dưới */
+.tieu_de_duoi .fa-bars {
+    display: none;
+}
+
+.tieu_de_duoi{
+    /* background-color: rgb(137, 149, 174); */
+    padding: 0 35px;
+    display: flex;
+    height: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tieu_de_duoi i{
+    color: #000;
+}
+
+.tieu_de_duoi .cong_cu .dia_chi,
+.tieu_de_duoi .cong_cu{
+    display: flex;
+    position: relative;
+}
+
+.tieu_de_duoi .logo {
+    line-height: 70px;
+}
+
+.tieu_de_duoi .logo a{
+    color: #000;
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.tieu_de_duoi .thanh_dieu_huong{
+    line-height: 70px; 
+}
+
+.tieu_de_duoi .thanh_dieu_huong a{
+    margin: 0 10px;
+    color: #000;
+}
+
+.tieu_de_duoi .thanh_dieu_huong .dh_live_stream{
+    color: #ff0000;
+}
+
+.cong_cu .dia_chi .dc_giao_hang{
+    padding-top: 16px;
+}
+
+.cong_cu .dia_chi .icon_vi_tri {
+    line-height: 70px;
+    padding: 0 10px;
+}
+
+.cong_cu .dia_chi .dc_giao_hang button{
+    border: none;
+    background-color: #fff;
+}
+
+.dc_giao_hang button i{
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.tieu_de_duoi .icon_td {
+    line-height: 70px;
+    padding: 0 10px;
+}
+
+
+/* End: css cho tiêu đề trên */
+
+hr{
+    background-color: #ccc;
+    height: 0.5px;
+    border: none;
+}
+
+#tieu_de .dc_chi_tiet{
+    position: absolute;
+    box-shadow: 0px 0px 10px 1px #999999;
+    right: 70px;
+    padding: 20px;
+    display: none;
+}
+
+#tieu_de .dc_chi_tiet h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+#tieu_de .dc_chi_tiet .danh_muc{
+    padding-top: 15px;
+    display: flex;
+}
+
+.dc_chi_tiet .danh_muc .dm_tinh_qh,
+.dc_chi_tiet .danh_muc .dm_tinh_tp{
+    padding-right: 20px;
+}
+
+.danh_muc label{
+    color: #8d8d8d;
+}
+
+.danh_muc .lua_chon{
+    padding-top: 5px;
+}
+
+.danh_muc select{
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.dc_chi_tiet .dc_cu_the1{
+    padding: 7px 10px;
+    border: 1px solid #8d8d8d;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #ccc;
+    font-size: 13px;
+}
+
+.dc_chi_tiet .dc_cu_the2 {
+    padding-bottom: 10px;
+}
+
+.dc_chi_tiet .dc_cu_the3{
+    padding-top: 10px;
+    display: flex;
+}
+
+.dc_chi_tiet .dc_cu_the3 i{
+    line-height: 43.2px;
+    padding: 10px;
+}
+
+.dc_cu_the3 .dc_mac_dinh .dc_dd{
+    font-weight: 700;
+}
+
+#tieu_de .mobile_dieu_huong {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 20;
+    display: none;
+}
+
+#tieu_de .mobile_dieu_huong .dh_main{
+    background-color: #fff;
+    padding: 20px;
+    width: 50%;
+    margin-top: 139px;
+} 
+
+.mobile_dieu_huong .dh_main .danh_muc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.dh_main .danh_muc h3{
+    font-size: 20px;
+}
+
+.mobile_dieu_huong .dh_main .list-dh{
+    line-height: 3;
+    padding-top: 15px;
+}
+
+.dh_main .list-dh li{
+    list-style: none;
+}
+
+.dh_main .list-dh a{
+    color: #000;
+    font-size: 15px;
+}
+
+.tim_kiem_responsive {
+    display: none;
+}
+/* responsive cho ipad */
+@media (min-width: 740px) and (max-width: 1023px){
+    .tieu_de_tren,
+    .tieu_de_duoi{
+        padding: 0 10px;
+    }
+
+    .cong_cu .dia_chi .dc_giao_hang{
+        display: none;
+    }
+
+    .tieu_de_duoi .thanh_dieu_huong .dh_live_stream {
+        display: none;
+    }
+
+    .cong_cu .tim_kiem_responsive{
+        position: absolute;
+    }
+
+    .tieu_de_duoi .fa-magnifying-glass {
+        display: none;
+    }
+    
+    .tim_kiem_responsive {
+        padding: 0 10px;
+    }
+
+    .tim_kiem_responsive input{
+        width: 88%;
+        padding: 0 10px;
+    }
+
+    .tim_kiem_responsive  i{
+        color: #000;
+        font-size: 17px;
+    }
+
+    .tim_kiem_responsive input{
+        width: 94%;
+        padding: 0 10px;
+    }
+}
+
+/* responsive cho điện thoại */
+@media (max-width: 740px){
+    
+    .tieu_de_tren{
+        padding: 5px 10px;
+    }
+
+    .tieu_de_duoi {
+        padding: 0px 10px;
+    }
+
+    .thoi_gian .hotline{
+        display: none;
+    }
+
+    .tieu_de_duoi .thanh_dieu_huong {
+        display: none;
+    }
+
+    .tieu_de_duoi a>.fa-magnifying-glass{
+        padding: 0;
+    }
+    .tieu_de_duoi .fa-magnifying-glass {
+        display: none;
+    }
+
+    .cong_cu .dia_chi .dc_giao_hang{
+        display: none;
+    }
+
+    .tim_kiem_responsive {
+        padding: 0 10px;
+
+    }
+
+    .tim_kiem_responsive input{
+        width: 88%;
+        padding: 0 10px;
+    }
+
+    .tim_kiem_responsive  i{
+        color: #000;
+        font-size: 17px;
+    }
+
+    .tieu_de_duoi .fa-bars {
+        display: block;
+        line-height: 70px;
+    }
+
+    .tieu_de_duoi .icon_td {
+        padding: 0 5px;
+    }
+}
