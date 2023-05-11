@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="./static/css/home.css">
+    <link rel="stylesheet" href="./static/font/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="slider_container">
+        <ul class="slider">
+            <li class="slider_item"><img src="./static/image/home/slider1.jpg" alt=""></li>
+            <li class="slider_item"><img src="./static/image/home/slider2.jpg" alt=""></li>
+            <li class="slider_item"><img src="./static/image/home/slider3.jpg" alt=""></li>
+        </ul>
+        <a class="slide_truoc" onclick="next()"><i class="fa-solid fa-chevron-left"></i></i></a>
+        <a class="slide_sau" onclick="prev()"><i class="fa-solid fa-chevron-right"></i></a>
+
+    </div>
+    <div class="container">
+        <div class="icon_down"><i class="fa-solid fa-chevron-down"></i></i></div>
+
+        <div class="home_banner">
+            <div class="banner_trai">
+                <img width="100%" src="./static/image/home/banner_home1.jpg" alt="">
+                <div class="text_banner_trai" style="text-align: center; font-size: 1.4rem; line-height: 1.7rem;">
+                    <h1>Thời Trang Nam</h1>
+                    <p>Cùng với sự phát triển liên tục của thế giới thời trang, nhiều thương hiệu đã tung ra các mẫu
+                        thời trang nam chính hãng với nhiều kiểu dáng,
+                        thiết kế, màu sắc, kích cỡ khác nhau...</p>
+                </div>
+                <button class="Mua_ngay">Mua Ngay</button>
+            </div>
+            <div class="banner_phai">
+                <img width="100%" src="./static/image/home/banner_home2.jpg" alt="">
+                <div class="text_banner_phai" style=" text-align: center; font-size: 1.4rem; line-height: 1.7rem;">
+                    <h1>Thời Trang Nữ</h1>
+                    <p>Ngày nay, thế giới trang sức nam nữ chính hãng rất đẹp, đa dạng với nhiều thiết kế và chất liệu
+                        khác nhau (vàng, bạc, đá quý),
+                        từ vòng đeo tay, bông tai, dây chuyền đến nhẫn.</p>
+                </div>
+                <button class="Mua_ngay">Mua Ngay</button>
+            </div>
+        </div>
+        <div class="danh_muc_sp">
+            <h1 style="font-size: 2.6rem;">Danh mục sản phẩm</h1>
+            <div class="danh_muc_sp_img">
+                <div class="muc_sp">
+                    <img width="100%" src="./static/image/home/danh_muc_sp1.jpg" alt="">
+                    <p>Áo sơ mi nam</p>
+                </div>
+                <div class="muc_sp">
+                    <img width="100%" src="./static/image/home/danh_muc_sp2.jpg" alt="">
+                    <p>Áo sơ mi nam</p>
+                </div>
+                <div class="muc_sp">
+                    <img width="100%" src="./static/image/home/danh_muc_sp3.jpg" alt="">
+                    <p>Áo sơ mi nam</p></div>
+                <div class="muc_sp">
+                    <img width="100%" src="./static/image/home/danh_muc_sp4.jpg" alt="">
+                    <p>Áo sơ mi nam</p></div>
+            </div>
+        </div>
+        <!-- sản phẩm mới -->
+        <div class="sp_moi">
+            <h1 style="font-size: 2.6rem; text-align: center;">Sản phẩm mới ra mắt</h1>
+            <div class="ds_san_pham">
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+        <div class="banner2">
+            <div class="banner2_tren">
+                <img src="./static/image/home/banner2_1.jpg" alt="">
+                <div class="banner2_text">
+                    <h1>Đồ trang sức độc quyền</h1>
+                    <p>Ngày nay, thế giới trang sức nam, nữ chính hãng rất đẹp, đa dạng với nhiều kiểu dáng, chất liệu khác nhau (vàng, bạc, đính đá),
+                     từ vòng tay, hoa tai, dây chuyền cho đến cả nhẫn.</p>
+                    <button class="banner2_btn">Xem Ngay</button>
+                </div>
+            </div>
+            <div class="banner2_duoi">
+                <div class="banner2_text">
+                    <h1>VÒNG TAY, LẮC TAY</h1>
+                    <p>Với chất liệu làm từ thép không gỉ 316L, đi kèm với đó là lớp mạ vàng hồng thời thượng bên ngoài (tùy phiên bản), những chiếc vòng tay, lắc tay đến 
+                    từ thương hiệu Daniel Wellington đã tạo nên cơn sốt không hề nhỏ trên thị trường kể từ thời điểm ra mắt.</p>
+                    <button class="banner2_btn">Xem Ngay</button>
+                </div>
+                <img src="./static/image/home/banner2_2.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- sản phẩm nổi bật -->
+        <div class="sp_moi">
+            <h1 style="font-size: 2.6rem; text-align: center;">Sản phẩm nổi bật</h1>
+            <div class="ds_san_pham">
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+
+                <div class="san_pham">
+                    <img src="./static/image/home/ds_sp.jpg" alt="">
+                    <p style="margin-bottom: 0;">Tiêu đề sản phẩm</p>
+                    <div class="gia_sp" style="display: flex; width: 100%; padding-top: 0;">
+                        <p style="width:1.2rem ;">3,150,000đ</p>
+                        <p style="margin-left: 4rem; color: rgb(121, 121, 121); text-decoration: line-through;">3,650,000đ</p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+        <div class="tin_tuc">
+            
+        </div>
+
+    </div>
+    <!-- footer -->
+</body>
+<script src="./static/js/home.js"></script>
+
+</html>

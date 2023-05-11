@@ -1,0 +1,157 @@
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spectral', sans-serif;
+}
+/* slide */
+.slider_container{
+    width: 100%;
+}
+.slider{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.slider_item {
+    flex: 0 0 100%;
+}
+
+.slider_item img{
+    width: 100%;
+}
+.slide_sau, .slide_truoc{
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transform: translateY(-50%);
+    padding: 0px 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.slide_truoc {
+    left: 0;
+    margin-left: 2rem;
+  }
+  
+.slide_sau {
+right: 0;
+margin-right: 2rem;
+
+}
+
+/* container */
+.container {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1.5rem;
+    /* background-color: antiquewhite; */
+}
+.icon_down{
+    width: 100%;
+    text-align: center;
+}
+.bi-chevron-down{
+    font-size: 2rem;
+}
+
+.home_banner{
+    margin-top: 5rem;
+    display: flex;
+    width: 100%;
+}
+.banner_trai, .banner_phai{
+    width: 49%;
+    display: grid;
+    justify-items: center;
+    cursor: pointer;
+    /* overflow: hidden; */
+}
+.banner_phai{
+    margin-left: 2%;
+}
+.banner_phai img:hover{
+    scale:105%;
+    transition: 0.6s;
+}
+.banner_trai img:hover{
+    scale:105%;
+    transition: 0.5s;
+
+}
+.Mua_ngay{
+    width: 9rem;
+    background-color: white;
+    padding: 0.5rem;
+    border: 0.1px dashed black;
+    border-radius: 0.7rem;
+}
+.danh_muc_sp{
+    margin-top: 5rem;
+    text-align: center;
+}
+.danh_muc_sp_img{
+    display: flex;
+    justify-content: space-between;
+}
+.ds_san_pham{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.muc_sp{
+    width: 24%;
+}
+/* sản phẩm mới ra mắt */
+.sp_moi{
+    margin-top: 5rem;
+}
+.san_pham{
+    display: grid;
+    width: 19%;
+}
+.san_pham img{
+    width: 100%;
+    position: relative;
+}
+
+/* banner2 */
+.banner2{
+    margin-top: 5rem;
+}
+.banner2_tren{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.banner2_text{
+    width: 50%;
+    font-size: 1.2rem;
+    padding-top: 2rem ;
+}
+.banner2_text p{ 
+    padding: 0 2rem;
+}
+.banner2_duoi{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.banner2 img{
+    width:50% ;
+}
+.banner2 button{
+    width: 9rem;
+    background-color: white;
+    padding: 0.5rem;
+    border: 0.1px dashed black;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+/*tin nổi bật*/
+
