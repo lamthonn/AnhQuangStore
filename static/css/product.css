@@ -1,0 +1,290 @@
+/* banner  */
+.banner {
+    display: flex;
+}
+
+.banner img {
+    width: 50%;
+}
+
+.banner div {
+    width: 50%;
+    font-size: 3rem;
+    background-color: #f8f8f8;
+}
+
+.banner span {
+    position: absolute;
+
+    top: 7rem;
+    padding-left: 2rem;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* sắp xếp */
+
+.sap_xep {
+    display: flex;
+    border: 1px solid rgb(35, 34, 34);
+    padding: 0.3rem;
+    position: relative;
+}
+
+.sap_xep:hover {
+    cursor: pointer;
+}
+
+.sap_xep div:first-child {
+    padding-right: 7.4rem;
+}
+
+/* sắp xếp ẩn */
+
+.sap_xep_an {
+    width: 12.5rem;
+    flex-direction: column;
+    background-color: white;
+    padding-left: 2rem;
+    border: 1px solid rgb(35, 34, 34);
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    z-index: 100;
+    display: none;
+}
+
+.sap_xep_an a {
+    text-decoration: none;
+    padding: 0.3rem 0;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.sap_xep_an a:hover {
+    opacity: 0.8;
+}
+
+.sap_xep:hover .sap_xep_an {
+    display: flex;
+}
+
+/* lọc */
+
+.loc {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    font-size: 1.2rem;
+}
+
+.loc:hover {
+    cursor: pointer;
+}
+
+.loc_an {
+    width: 36%;
+    padding-left: 14px;
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+}
+
+/* tiêu đề của lọc */
+.loc-tieude {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding-right: 20px
+}
+
+.loc-tieude i {
+    padding: 0.2rem 0.3rem;
+}
+
+.loc-tieude i:hover {
+    cursor: pointer;
+    background-color: #f6f6f6;
+}
+
+/* các tiêu đề  */
+.tieu_de {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+.danh_muc,
+.nha_cung_cap,
+.loc_gia {
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.danh_muc {
+    display: flex;
+    flex-direction: column;
+}
+
+.danh_muc a {
+    text-decoration: none;
+    padding: 0.3rem 0;
+    color: black;
+}
+
+.loc_gia div{
+    padding: 0.3rem 0;
+}
+
+.mau_sac button {
+    padding: 1rem;
+    margin-right: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-radius: 7px;
+}
+
+
+
+/* các sản phẩm */
+.cac_san_pham {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.san_pham {
+    width: 19%;
+    height: 26rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+
+.anh {
+    width: 90%;
+    margin-left: 5%;
+    height: 18rem;
+}
+
+.anh:hover {
+    cursor: pointer;
+}
+
+.hang_1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    color: #c2c2c2;
+}
+
+.hang_1 button {
+    margin-right: 0.2rem;
+    padding: 0.5rem;
+}
+
+.ten {
+    font-size: 1.1rem;
+    margin: 0.8rem 0;
+}
+
+.ten:hover {
+    cursor: pointer;
+}
+
+.gia {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.gia_sale {
+    font-weight: 600;
+}
+
+.gia_goc {
+    text-decoration: line-through;
+    font-size: 1.1rem;
+}
+
+.them_gio {
+    margin: 0.3rem 0;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 1.3rem;
+    font-weight: 600;
+}
+
+.them_gio:hover {
+    border: 1px solid rgb(35, 34, 34);
+    cursor: pointer;
+}
+
+.them_gio i {
+    padding: 0.5rem 0.6rem;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.sale {
+    position: absolute;
+    top: 12px;
+    background-color: #fa3838;
+    color: white;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    left: 13px;
+}
+
+.xem_them {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.xem_them button {
+    padding: 1rem 1.6rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.xem_them button:hover {
+    color: white;
+    background-color: rgb(35, 34, 34);
+    cursor: pointer;
+}
+
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    .san_pham {
+        width: 45%;
+    }
+    
+    .banner div {
+        font-size: 2rem;
+    }
+
+    .banner span {
+        top: 2rem;
+    }
+}
