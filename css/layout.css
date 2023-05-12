@@ -19,6 +19,11 @@ i{
     font-size: 20px;
 }
 
+li{
+    list-style: none;
+}
+
+/* begin: tiêu đề */
 #tieu_de{
     position: relative;
 }
@@ -120,6 +125,12 @@ i{
     padding: 0 10px;
 }
 
+.cong_cu .la{
+    border: none;
+    background-color: #fff;
+    height: 70px;
+}
+
 .cong_cu .dia_chi .dc_giao_hang button{
     border: none;
     background-color: #fff;
@@ -134,8 +145,6 @@ i{
     line-height: 70px;
     padding: 0 10px;
 }
-
-
 /* End: css cho tiêu đề trên */
 
 hr{
@@ -150,6 +159,7 @@ hr{
     right: 70px;
     padding: 20px;
     display: none;
+    margin-top: 80px;
 }
 
 #tieu_de .dc_chi_tiet h3{
@@ -257,8 +267,167 @@ hr{
 .tim_kiem_responsive {
     display: none;
 }
+
+.user{
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    width: 120px;
+    padding: 10px;
+    position: absolute;
+    z-index: 15px;
+    background-color: #ccc;
+    right: 45px;
+}
+
+.user a{
+    color: #000;
+}
+/* end: tiêu đề */
+
+/* begin: chân trang */
+    /* begin: chân trang trên */
+    #chan_trang .chan_trang_tren{
+        background-color: rgb(28 66 144);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 38px 75px;
+        color: #fff;
+    }
+
+    .chan_trang_tren .tren_ket_noi .link_ket_noi,
+    #chan_trang .chan_trang_tren .tren_ket_noi,
+    #chan_trang .chan_trang_tren .tren_dang_ky {
+        display: flex;
+    }
+
+    #chan_trang .chan_trang_tren h3{
+        font-size: 20px;
+    }
+
+    .chan_trang_tren .tren_dang_ky input {
+        margin: 0 15px;
+        border-radius: 20px;
+        width: 290px;
+        padding: 8px 15px;
+        border: none;
+    }
+
+    .chan_trang_tren .tren_dang_ky span{
+        line-height: 37.6px;
+        padding: 0 35px;
+        background-color: #000;
+        border-radius: 20px;
+        font-weight: 600;
+    }
+
+    .chan_trang_tren .tren_ket_noi h3{
+        padding-right: 10px;
+    }
+
+    .tren_ket_noi .link_ket_noi i{
+        font-size: 14px;
+        border: 1px solid #fff;
+        padding: 10px;
+        border-radius: 18px;
+        margin: 0 5px;
+    }
+    /* end: chân trang trên */
+
+    /* begin: chân trang dưới */
+    #chan_trang .chan_trang_duoi{
+        background-color: rgb(25 61 135);
+        display: flex;
+        padding: 38px 75px;
+        color: #fff;
+
+    }
+
+    #chan_trang .chan_trang_duoi h4{
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    
+    #chan_trang .chan_trang_duoi .chinh_sach,
+    #chan_trang .chan_trang_duoi .ho_tro_khach_hang,
+    #chan_trang .chan_trang_duoi .lien_ket,
+    #chan_trang .chan_trang_duoi .luxe{
+        width: 25%;
+    }
+
+    .chan_trang_duoi .fa-caret-down{
+        display: none;
+    }
+
+    .chan_trang_duoi .luxe .thong_tin{
+        padding: 10px 0;
+        line-height: 2.2;
+    }
+
+    .luxe .thong_tin i{
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+    .luxe .thong_tin li:first-child{
+        line-height: 1.8;
+    }
+
+    .phuong_thuc_tt .thanh_toan{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .phuong_thuc_tt .thanh_toan li img{
+        border-radius: 4px;
+    }
+
+    .chan_trang_duoi .ho_tro_khach_hang{
+        padding: 0 50px;
+    }
+
+    .chinh_sach .list_cs,
+    .lien_ket .list_lk,
+    .ho_tro_khach_hang .htkh ul{
+        margin: 0 15px;
+        line-height: 2.2;
+    }
+
+    .chinh_sach .list_cs li,
+    .lien_ket .list_lk li,
+    .ho_tro_khach_hang .htkh li{
+        list-style: disc;
+    }
+
+    .ho_tro_khach_hang .ptvc .van_chuyen{
+        display: flex;
+    }
+
+    .ptvc .van_chuyen li{
+        padding: 0 10px;
+    }
+
+    .van_chuyen li img{
+        border-radius: 4px;
+    }
+
+    /* end: chân trang dưới */
+
+    /* begin: chân trang cuối */
+    #chan_trang .chan_trang_cuoi{
+    background-color: rgb(28 66 144);
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 13px;
+    }
+    /* end: chân trang cuối */
+/* end: chân trang */
+
 /* responsive cho ipad */
 @media (min-width: 740px) and (max-width: 1023px){
+    /* begin: tiêu đề */
     .tieu_de_tren,
     .tieu_de_duoi{
         padding: 0 10px;
@@ -267,7 +436,7 @@ hr{
     .cong_cu .dia_chi .dc_giao_hang{
         display: none;
     }
-
+    
     .tieu_de_duoi .thanh_dieu_huong .dh_live_stream {
         display: none;
     }
@@ -298,11 +467,74 @@ hr{
         width: 94%;
         padding: 0 10px;
     }
+
+    
+    /* end: tiêu đề */
+
+    /* begin: chân trang */
+    #chan_trang .chan_trang_tren {
+        padding: 38px 10px;
+    }
+
+    #chan_trang .chan_trang_tren .tren_ket_noi, 
+    #chan_trang .chan_trang_tren .tren_dang_ky{
+        display: block;
+    }
+
+    .chan_trang_tren .tren_ket_noi .link_ket_noi,
+    .chan_trang_tren .tren_dang_ky input {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .chan_trang_tren .tren_dang_ky span {
+        padding: 10px 35px;
+    }
+
+    #chan_trang .chan_trang_duoi{
+        display: block;
+        padding: 38px 10px;
+    }
+    
+    #chan_trang .chan_trang_duoi .chinh_sach,
+    #chan_trang .chan_trang_duoi .ho_tro_khach_hang,
+    #chan_trang .chan_trang_duoi .lien_ket,
+    #chan_trang .chan_trang_duoi .luxe{
+        width: 100%;
+    }
+
+    .phuong_thuc_tt .thanh_toan {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .phuong_thuc_tt .thanh_toan li{
+        margin-right: 10px;
+    }
+
+    .chan_trang_duoi .ho_tro_khach_hang{
+        padding: 0;
+    }
+
+    .chan_trang_duoi .fa-caret-down{
+        display: block;
+    }
+
+    #chan_trang .chan_trang_duoi h4 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hidden {
+        display: none;
+    }
+    /* end: chân trang */
 }
 
 /* responsive cho điện thoại */
 @media (max-width: 740px){
-    
+    /* begin: tiêu đề */
     .tieu_de_tren{
         padding: 5px 10px;
     }
@@ -353,4 +585,73 @@ hr{
     .tieu_de_duoi .icon_td {
         padding: 0 5px;
     }
+    /* end: tiêu đề */
+
+    /* begin: chân trang */
+    #chan_trang .chan_trang_tren {
+        padding: 38px 10px;
+    }
+
+    #chan_trang .chan_trang_tren .tren_ket_noi, 
+    #chan_trang .chan_trang_tren .tren_dang_ky{
+        display: block;
+    }
+
+    #chan_trang .chan_trang_tren .tren_ket_noi{
+        padding-top: 20px;
+    }
+
+    .chan_trang_tren .tren_ket_noi .link_ket_noi,
+    .chan_trang_tren .tren_dang_ky input {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .chan_trang_tren .tren_dang_ky span {
+        padding: 10px 35px;
+    }
+
+    #chan_trang .chan_trang_duoi{
+        display: block;
+        padding: 38px 10px;
+    }
+    
+    #chan_trang .chan_trang_duoi .chinh_sach,
+    #chan_trang .chan_trang_duoi .ho_tro_khach_hang,
+    #chan_trang .chan_trang_duoi .lien_ket,
+    #chan_trang .chan_trang_duoi .luxe{
+        width: 100%;
+    }
+
+    .phuong_thuc_tt .thanh_toan {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .phuong_thuc_tt .thanh_toan li{
+        margin-right: 10px;
+    }
+
+    .chan_trang_duoi .ho_tro_khach_hang{
+        padding: 0;
+    }
+
+    .chan_trang_duoi .fa-caret-down{
+        display: block;
+    }
+
+    #chan_trang .chan_trang_duoi h4 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .chan_trang_tren .tren_dang_ky input {
+        width: 210px;
+    }
+    /* end: chân trang */
 }
