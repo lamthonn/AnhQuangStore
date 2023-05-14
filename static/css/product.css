@@ -1,3 +1,6 @@
+/* display: flex để cho các phần tử lên cùng 1 hàng  */
+
+
 /* banner  */
 .banner {
     display: flex;
@@ -14,9 +17,10 @@
 }
 
 .banner span {
-    position: absolute;
-
-    top: 7rem;
+    /* để cho đối tượng có thể tự động thay đổi theo thẻ bên ngoài nó có thuộc tính là position: relative; */
+    position: absolute;  
+    font-size: 4rem;
+    top: 17rem;
     padding-left: 2rem;
 }
 
@@ -39,11 +43,12 @@ body {
 }
 
 .sap_xep:hover {
+/* khi di chuyển chuột vào thì con chuột chuyển thành con trỏ */
     cursor: pointer;
 }
 
 .sap_xep div:first-child {
-    padding-right: 7.4rem;
+    padding-right: 7.95rem;
 }
 
 /* sắp xếp ẩn */
@@ -55,8 +60,8 @@ body {
     padding-left: 2rem;
     border: 1px solid rgb(35, 34, 34);
     position: absolute;
-    top: 2rem;
-    right: 0;
+    top: 2.3rem;
+    right: -0.05rem;
     z-index: 100;
     display: none;
 }
@@ -121,19 +126,19 @@ body {
     padding: 2rem 0;
 }
 
-.danh_muc,
+.cac_danh_muc,
 .nha_cung_cap,
 .loc_gia {
     padding-bottom: 2rem;
     font-size: 1.2rem;
 }
 
-.danh_muc {
+.cac_danh_muc {
     display: flex;
     flex-direction: column;
 }
 
-.danh_muc a {
+.cac_danh_muc a {
     text-decoration: none;
     padding: 0.3rem 0;
     color: black;
@@ -155,22 +160,26 @@ body {
 /* các sản phẩm */
 .cac_san_pham {
     display: flex;
+    /* nếu không đủ không gian thì xuống dòng */
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .san_pham {
-    width: 19%;
-    height: 26rem;
+    width: 21%;
+    height: 35.5rem;
     margin-bottom: 3rem;
     position: relative;
 }
 
+/* đổ bóng cho đối tượng khi hover vào */
+.san_pham:hover {
+    box-shadow: 0px 0.7rem 3.3rem -0.2rem rgba(0,0,0,0.15);
+}
 
 .anh {
-    width: 90%;
-    margin-left: 5%;
-    height: 18rem;
+    width: 100%;
+    height: 24rem;
 }
 
 .anh:hover {
@@ -270,7 +279,7 @@ body {
 }
 
 
-
+/* responsive */
 @media only screen and (max-width: 600px) {
     html {
         font-size: 12px;
@@ -278,6 +287,11 @@ body {
 
     .san_pham {
         width: 45%;
+        height: 34rem;
+    }
+
+    .anh {
+        height: 22rem;
     }
     
     .banner div {
@@ -285,6 +299,7 @@ body {
     }
 
     .banner span {
-        top: 2rem;
+        font-size: 2.2rem;
+        top: 14rem;
     }
 }
