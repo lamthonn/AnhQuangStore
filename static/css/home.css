@@ -250,6 +250,37 @@ margin-right: 2rem;
 
 }
 
+@media (max-width: 740px){
+    .home_banner{
+        display: grid;
+    }
+    .banner_trai, .banner_phai{
+        width: 100%;
+        margin-top: 1rem;
+        /* display: grid;
+        justify-items: center;
+        cursor: pointer; */
+    }
+    .slide_truoc, .slide_sau{
+        top: 29%;
+    }
+    .banner2_tren {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner2_duoi {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+    .banner2_tren img,
+    .banner2_duoi img,
+    .banner2_text {
+        width: 100%;
+    }
+    
+}
+
 @media (min-width: 740px) and (max-width: 1023px){
     .home_banner{
         display: grid;
