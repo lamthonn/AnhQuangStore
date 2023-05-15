@@ -1,3 +1,4 @@
+//slider trang home
 let vi_tri = 0;
 const slides = document.getElementsByClassName('slider_item');
 

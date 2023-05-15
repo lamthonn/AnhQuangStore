@@ -59,7 +59,7 @@ margin-right: 2rem;
 .bi-chevron-down{
     font-size: 2rem;
 }
-
+/*banner*/
 .home_banner{
     margin-top: 5rem;
     display: flex;
@@ -70,14 +70,26 @@ margin-right: 2rem;
     display: grid;
     justify-items: center;
     cursor: pointer;
-    /* overflow: hidden; */
 }
+.text_banner_trai h1, .text_banner_phai h1{
+    text-align: center;
+    line-height: 1.7rem;
+    font-size: 3.4rem;
+    margin: 2rem 0;
+}
+.text_banner_trai p, .text_banner_phai p{
+    text-align: center;
+    line-height: 1.7rem;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+}
+
 .banner_phai{
     margin-left: 2%;
 }
 .banner_phai img:hover{
     scale:105%;
-    transition: 0.6s;
+    transition: 0.5s;
 }
 .banner_trai img:hover{
     scale:105%;
@@ -91,6 +103,8 @@ margin-right: 2rem;
     border: 0.1px dashed black;
     border-radius: 0.7rem;
 }
+
+/* danh mục sản phẩm */
 .danh_muc_sp{
     margin-top: 5rem;
     text-align: center;
@@ -101,12 +115,13 @@ margin-right: 2rem;
 }
 .ds_san_pham{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .muc_sp{
     width: 24%;
 }
+
 /* sản phẩm mới ra mắt */
 .sp_moi{
     margin-top: 5rem;
@@ -114,28 +129,41 @@ margin-right: 2rem;
 .san_pham{
     display: grid;
     width: 19%;
+    min-width: 200px;
 }
 .san_pham img{
     width: 100%;
     position: relative;
 }
-
+.gia_sp{
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+    display: flex; 
+    width: 100%; 
+    padding-top: 0;
+}
 /* banner2 */
 .banner2{
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 .banner2_tren{
     display: flex;
     width: 100%;
     text-align: center;
 }
-.banner2_text{
+.banner2_text {
     width: 50%;
-    font-size: 1.2rem;
-    padding-top: 2rem ;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+.banner2_text h1{ 
+    font-size: 3rem;
 }
 .banner2_text p{ 
     padding: 0 2rem;
+    font-size: 1.4rem;
 }
 .banner2_duoi{
     display: flex;
@@ -152,13 +180,21 @@ margin-right: 2rem;
     border: 0.1px dashed black;
     border-radius: 0.7rem;
     cursor: pointer;
+    margin-top: 1rem;
 }
+
 /*tin nổi bật*/
 .tin_tuc{
     margin-top: 5rem;
 }
+
+.tin_tuc h1{
+    font-size: 2.7rem;
+    text-align: center;
+}
 .news{
     display: flex;
+    margin-top: 1rem;
 }
 .new{
     width: 35%;
@@ -171,6 +207,7 @@ margin-right: 2rem;
     padding: 0 1rem;
 }
 
+
 /* luxe mode */
 
 .Luxe_mode{
@@ -181,6 +218,65 @@ margin-right: 2rem;
 .Luxe_mode1
 {
     width: 100%;
-    height: 20rem;
-    background-color: rgba(0, 255, 255, 0.213);
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 1.5rem 0rem;
+}
+.Luxe_mode1 h1{
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.Luxe_mode1 p{
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding-left:5.5rem ;
+    padding-right:5.5rem ;
+}
+.Luxe_mode2{
+    display: flex;
+    margin-top: 5rem;
+}
+.Luxe_mode2_box{
+    width: 25%;
+    /* background-color: aqua; */
+    text-align: center;
+    line-height: 2.4rem;
+}
+.Luxe_mode2_box i{
+    font-size: 3rem;
+
+}
+
+@media (min-width: 740px) and (max-width: 1023px){
+    .home_banner{
+        display: grid;
+    }
+    .banner_trai, .banner_phai{
+        width: 100%;
+        margin-top: 1rem;
+        /* display: grid;
+        justify-items: center;
+        cursor: pointer; */
+    }
+    .slide_truoc, .slide_sau{
+        top: 29%;
+    }
+    .banner2_tren {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner2_duoi {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+    .banner2_tren img,
+    .banner2_duoi img,
+    .banner2_text {
+        width: 100%;
+    }
+    
 }
