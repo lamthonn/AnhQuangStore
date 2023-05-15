@@ -130,10 +130,13 @@ margin-right: 2rem;
     display: grid;
     width: 19%;
     min-width: 200px;
+    overflow: hidden;
 }
 .san_pham img{
     width: 100%;
     position: relative;
+    height: 26rem;
+    
 }
 .gia_sp{
     margin-bottom: 2rem;
